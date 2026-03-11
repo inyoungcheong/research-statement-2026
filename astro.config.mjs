@@ -7,7 +7,7 @@ import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 
 export default defineConfig({
   site: 'https://inyoungcheong.github.io',
-  base: '/research-statemnt',
+  base: '/research-statement-2026',
   integrations: [
     tailwind(),
     mdx({

@@ -11,6 +11,7 @@ interface Props {
   posted?: string;
   lastUpdated?: string;
   pdfFile?: string;
+  password?: string;
   headings?: Heading[];
 }
 
@@ -20,6 +21,7 @@ const {
   posted,
   lastUpdated,
   pdfFile,
+  password,
   headings = [],
 } = Astro.props;
 
@@ -32,12 +34,16 @@ const tocHeadings = headings.filter((h) => h.depth <= 3);
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
+    {password && <meta name="x-pw" content={password} />}
     <script is:inline>
-      // Password gate
+      // Password gate (only when <meta name="x-pw"> is present)
       (function() {
+        var el = document.querySelector('meta[name="x-pw"]');
+        if (!el) return;
+        var key = el.getAttribute('content');
         if (sessionStorage.getItem('auth') !== '1') {
           var pw = prompt('Password:');
-          if (pw !== 'marry2026') {
+          if (pw !== key) {
             document.documentElement.innerHTML = '';
             location.href = 'about:blank';
           } else {
@@ -181,17 +187,30 @@ const tocHeadings = headings.filter((h) => h.depth <= 3);
       }
 
       /* Heading anchor links — override all prose link styles */
+      .prose h1 > a,
       .prose h2 > a,
       .prose h3 > a {
         color: inherit !important;
         text-decoration: none !important;
         font-weight: inherit !important;
       }
+      .prose h1 > a:hover::after,
       .prose h2 > a:hover::after,
       .prose h3 > a:hover::after {
         content: ' ¶';
         color: var(--border);
         font-weight: 400;
+      }
+      /* Section headings (h2) — comfortable size for academic paper */
+      .prose h2 {
+        font-size: 1.25rem;
+        margin-top: 2rem;
+        margin-bottom: 0.5rem;
+      }
+      .prose h3 {
+        font-size: 1.05rem;
+        margin-top: 1.5rem;
+        margin-bottom: 0.4rem;
       }
 
       /* Desktop TOC */

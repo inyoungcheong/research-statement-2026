@@ -9,11 +9,8 @@ AI-mediated harms are growing in prevalence and severity, from perpetuating raci
 
 To reclaim the public’s rights to self-government, I seek to build the foundations of legal and technical governance for responsible AI systems. By *legal governance*, I refer to enforceable rules grounded in democratic authority, such as the EU AI Act, that regulate those who build, deploy, and use AI. By *technical governance*, I mean the rules and architectures created by developers that directly shape how AI systems behave. As Lawrence Lessig declared, “code is law”; those who design and control technical governance exercise rulemaking power. However autonomous AI agents may appear, they are corporate-engineered products. My research examines the concentration of this rulemaking power and asks how it can be realigned with democratic oversight and societal values. For this vision, my work has evolved through three strands: (1) doctrinal scholarship on free speech and digital regulation, (2) law-grounded empirical research that evaluates emerging harms, and (3) system-building projects that embed legal principles, such as accountability, fairness, and duty of care, into AI system design.
 
-<figure id="fig:enter-label" data-latex-placement="h">
-<p><embed src="syn.pdf" style="width:80.0%" /> </p>
-</figure>
 
-# Theoretical Thinking: Free Speech and AI Regulation
+## Theoretical Thinking: Free Speech and AI Regulation
 
 I examine how digital technology corporations have claimed power in online spaces by subverting existing legal doctrines, particularly those concerning free speech. For example, before *Moody v. NetChoice*, where the US Supreme Court sidelined with the social media companies’ free speech claims against state laws regulating content moderation, I published a law review article warning that social media algorithms might receive free speech protection, placing tech companies in a “sweet spot” where they have power without accountability [^1]. I trace how large technology companies have cherrypicked legal metaphors between intermediaries and speakers, adopting whichever identity best shields them from accountability in a given context. Through these shifting analogies, each persuasive in isolation but contradictory in combination, companies have secured control over public fora and turned the First Amendment into a doctrine on corporate freedom.
 
@@ -21,11 +18,9 @@ The rise of generative AI has only deepened concerns about corporate power. At l
 
 In a forthcoming article in *Michigan Technology Law Review*, I uncover the novel free speech risks of AI systems that seamlessly enter users’ most private cognitive spaces as a sounding board [^3]. AI systems pose a critical threat to freedom of thought through bias, manipulation, delusional thinking, and cognitive over-reliance, therefore corporate invocations of free speech should not obstruct regulatory efforts. My comprehensive analysis of First Amendment cases covering freedom of religion, academic freedom, artistic expression, and associational rights reveals that institutional speech merits First Amendment protection only when anchored in human thought, as in the unified voice of advocacy groups. I calibrate protections for institutional speech based on viewpoint orientation and scope of audience, which I call the *human-centered First Amendment*.
 
-<embed src="freespeech.pdf" />
+*Figure: AI and social media providers receive low speech protection.*
 
-0.8 AI and social media providers receive low speech protection.
-
-# Empirical Work: Making AI Harms Legible to Law
+## Empirical Work: Making AI Harms Legible to Law
 
 I expose AI-induced harms ranging from emotional manipulation to privacy and confidentiality breaches through law-grounded empirical approaches. I employ diverse methodologies (interviews, expert panels, surveys, and LLM evaluation) but prioritize iterative design where legal frameworks guide inquiry without predetermining outcomes. This approach ensures findings translate directly into regulatory action while maintaining empirical rigor. Accurately understanding these harms is essential for evidence-based policy.
 
@@ -35,23 +30,23 @@ Manipulation stems from AI systems’ remarkable capability of collecting, infer
 
 Privacy concerns deepen when AI systems handle sensitive information that traditionally enjoys legal protections like confidentiality and privilege. I leveraged qualitative research eliciting knowledge from legal professionals about AI’s proper behavior in professional advice contexts [^10]. I led the first study interviewing practicing attorneys to identify ethical principles for AI systems [^11], which received over 100 citations within a year and inspired multiple follow-up studies in HCI communities [^12]. Beyond known concerns like hallucinations or bias, participants flagged novel issues such as the lack of attorney-client privilege in chatbot conversations. While lawyer-client conversations are privileged and protected from discovery, users’ conversations with ChatGPT lack such protections. This concern reappeared in my recent interviews with public defenders for a manuscript submitted to *ACM CSLAW 2026* [^13]. Public defenders are wary of AI use, even for mechanical tasks like video summarization, because their inputs may not be protected as work product and could be used against their clients. This problem reveals that AI’s handling of delegated information extends beyond traditional privacy regimes centered on notice and consent, which leads to my first future research direction.
 
-# System Design: Encoding Legal Principles into Technical Governance
+## System Design: Encoding Legal Principles into Technical Governance
 
 I work toward AI systems that embed legal values in their central design principles. This approach strengthens safety guardrails before harms materialize, heightens user awareness of risks, and offers flexibility where laws remain rigid, creating room for creative solutions. I believe legal scholarship has much to contribute to this emerging space through its rigor in legal reasoning, which provides normative guideposts that are more consistent and systematic than individual researchers’ intuitions.
 
 I am leading the development of the [LoyaltyEval benchmark](https://loyalagents.org), a collaborative initiative with Consumer Reports and Stanford HAI. I constructed a scenario dataset drawing on authoritative legal sources, including the Restatements of Agency, Torts, Trusts, ALI Corporate Governance, and the ABA Law Governing Lawyers. Using this dataset, we demonstrated an LLM-as-a-judge capable of identifying problematic behaviors by AI agents, such as receiving undisclosed kickbacks or concealing material information. Translating these doctrines into AI contexts, however, requires more than direct replication. Fiduciary law presupposes an *undivided loyalty* between agent and principal, an expectation that collapses within the inherently *polyadic* environment of AI systems. Our findings indicate that legal duties must therefore be reinterpreted and redistributed to reflect this multi-actor reality.
 
-<img src="loyalty.png" alt="image" />
+<img src="/research-statement-2026/images/loyalty.png" alt="LoyaltyEval benchmark diagram" />
 
 These insights culminated in a standalone paper on the limits and possibilities of applying agency law to AI agents, submitted to *ICLR 2026* [^14]. As the next step, we plan to scale the LLM-as-a-judge to more complex, real-world scenarios and assess its reasoning against expert legal judgments for consistency, reliability, and interpretive depth. Ultimately, this line of work offers validation of the concept of how legal principles can be operationalized as technical governance mechanisms in AI systems.
 
 Encoding legal principles into AI systems requires understanding stakeholders’ needs and values [^15]. Through my interview study with legal practitioners [^16], I dissected the principle that AI systems should not cross the line from neutral information into personalized legal opinions, a distinction familiar to lawyers but overlooked by system designers. Many envisioned AI as a tool for refining questions through multi-turn interactions, helping users better articulate legal needs before seeking human counsel. This research, a winner of OpenAI’s Democratic Inputs to AI Grant competition, informed OpenAI’s safety policy. I broadened this approach to US public defenders [^17], and I hope to extend this direct engagement with stakeholders to envision better technical governance.
 
-<img src="stat.JPG" alt="image" />
+<img src="/research-statement-2026/images/stat.JPG" alt="Survey results" />
 
-0.8Legal practitioners’ preferences on informational content in AI-generated legal advice.
+*Figure: Legal practitioners’ preferences on informational content in AI-generated legal advice.*
 
-# Future Directions
+## Future Directions
 
 I work toward a world where AI developers are not shielded by the opacity or volatility of their systems but are accountable to democratic oversight and public values. For this vision, I will pursue funding from multiple sources aligned with my interdisciplinary approach, building on successful partnerships with Consumer Reports, OpenAI, and the South Korean government. Foundation grants from Carnegie Corporation, Knight Foundation, Mozilla Foundation, Hewlett Foundation, the Cooperative AI Foundation, and the Humanities and AI Virtual Institute at Schmidt Sciences support research on democratic governance and AI safety. Federal funding includes NSF programs such as Cyber–Human Systems and Secure and Trustworthy Cyberspace, DARPA initiatives on AI assurance and human–machine collaboration, NIST’s Center for AI Standards and Innovation, and NIH programs related to behavioral science and digital mental health. The following topics outline my specific research agenda.
 
@@ -63,46 +58,46 @@ I work toward a world where AI developers are not shielded by the opacity or vol
 
 ***System Design: Advancing the “LLM-as-a-Judge” Paradigm.*** Most existing evaluation benchmarks focus on isolated and narrowly defined tasks, such as multiple-choice questions or coding exercises, which fail to capture the complexity of real-world use cases. Through my work on LoyaltyEval, I have found the LLM-as-a-judge approach both promising and deeply concerning as to its reliability. Empirical studies show that LLM judgments align with human experts only about 60 percent of the time [^22]. I want to explore whether insights from judicial decision-making can provide methodological rigor. One direction is simulating multi-member juries and enabling deliberation to reduce individual biases and enhance reasoning quality. Another is separating fact-finding and legal interpretation, mirroring the complementary roles of juries and judges in courts. Historically, judicial instructions to juries have been sites of intense legal debate, and studying how such instructions guide reasoning may reveal new ways to enhance the interpretive depth and consistency of LLM-as-a-judge systems.
 
-[^1]: Inyoung Cheong. (2023). "Freedom of Algorithmic Expression". University of Cincinnati Law Review
+[^1]: Inyoung Cheong (2023). Freedom of Algorithmic Expression. *University of Cincinnati Law Review*
 
-[^2]: Cheong et al.. (2024). "Safeguarding human values: rethinking US law for generative AI’s societal impacts". AI and Ethics
+[^2]: Cheong et al (2024). Safeguarding human values: rethinking US law for generative AI’s societal impacts. *AI and Ethics*
 
-[^3]: Inyoung Cheong. (forthcoming). "Epistemic and Emotional Harms of Generative AI: Towards Human-Centered First Amendment". Michigan Technology Law Review
+[^3]: Inyoung Cheong (forthcoming). Epistemic and Emotional Harms of Generative AI: Towards Human-Centered First Amendment. *Michigan Technology Law Review*
 
-[^4]: Cheong et al.. (2024). "Safeguarding human values: rethinking US law for generative AI’s societal impacts". AI and Ethics
+[^4]: Cheong et al (2024). Safeguarding human values: rethinking US law for generative AI’s societal impacts. *AI and Ethics*
 
-[^5]: Cheong et al.. (2025). "Emotional Reliance on AI: Design, Dependency, and the Future of Human Connection". Princeton CITP Blog
+[^5]: Cheong et al (2025). Emotional Reliance on AI: Design, Dependency, and the Future of Human Connection. *Princeton CITP Blog*
 
-[^6]: Inyoung Cheong. (forthcoming). "Epistemic and Emotional Harms of Generative AI: Towards Human-Centered First Amendment". Michigan Technology Law Review
+[^6]: Inyoung Cheong (forthcoming). Epistemic and Emotional Harms of Generative AI: Towards Human-Centered First Amendment. *Michigan Technology Law Review*
 
-[^7]: He et al.. (2025). "The Deployment of End-to-End Audio Language Models Should Take into Account the Principle of Least Privilege". Proceedings of the 2025 AAAI/ACM Conference on AI, Ethics, and Society
+[^7]: He et al (2025). The Deployment of End-to-End Audio Language Models Should Take into Account the Principle of Least Privilege. *Proceedings of the 2025 AAAI/ACM Conference on AI, Ethics, and Society*
 
-[^8]: Inyoung Cheong. (2020). "After Facebook’s 2016 Data Breach I: The California Consumer Privacy Act of 2018". The Journal of Law and Economic Regulation; Inyoung Cheong. (2020). "After Facebook’s 2016 Data Breach II: The U.S. Federal Courts’ Consumer Class Actions". The Journal of Law and Economic Regulation; Inyoung Cheong. (2021). "After Facebook’s 2016 Data Breach III: The FTC’s 5-Billion Dollar Settlement". The Journal of Law and Economic Regulation
+[^8]: Inyoung Cheong (2020). After Facebook’s 2016 Data Breach I: The California Consumer Privacy Act of 2018. *The Journal of Law and Economic Regulation*; Inyoung Cheong (2020). After Facebook’s 2016 Data Breach II: The U.S. Federal Courts’ Consumer Class Actions. *The Journal of Law and Economic Regulation*; Inyoung Cheong (2021). After Facebook’s 2016 Data Breach III: The FTC’s 5-Billion Dollar Settlement. *The Journal of Law and Economic Regulation*
 
-[^9]: Cheong et al.. (2024). "Safeguarding human values: rethinking US law for generative AI’s societal impacts". AI and Ethics
+[^9]: Cheong et al (2024). Safeguarding human values: rethinking US law for generative AI’s societal impacts. *AI and Ethics*
 
-[^10]: K.J. Kevin Feng et al.. (2023). "Case Repositories: Towards Case-Based Reasoning for AI Alignment". NeurIPS 2023 MP2 Workshop; Feng et al.. (2024). "Policy Prototyping for LLMs: Pluralistic Alignment via Interactive and Collaborative Policymaking". ICLR 2025 Bidirectional Human-AI Alignment (Bi-Align) Workshop; Feng et al.. (2025). "PolicyPad: Collaborative Prototyping of LLM Policies". arXiv preprint arXiv:2509.19680
+[^10]: K.J. Kevin Feng et al (2023). Case Repositories: Towards Case-Based Reasoning for AI Alignment. *NeurIPS 2023 MP2 Workshop*; Feng et al (2024). Policy Prototyping for LLMs: Pluralistic Alignment via Interactive and Collaborative Policymaking. *ICLR 2025 Bidirectional Human-AI Alignment (Bi-Align) Workshop*; Feng et al (2025). PolicyPad: Collaborative Prototyping of LLM Policies. *arXiv preprint arXiv:2509.19680*
 
-[^11]: Cheong et al.. (2024). "(A) I am not A lawyer, but...: engaging legal experts towards responsible LLM policies for legal advice". Proceedings of the 2024 ACM Conference on Fairness, Accountability, and Transparency
+[^11]: Cheong et al (2024). (A) I am not A lawyer, but...: engaging legal experts towards responsible LLM policies for legal advice. *Proceedings of the 2024 ACM Conference on Fairness, Accountability, and Transparency*
 
-[^12]: Harasta & Novotná. (2024). "It cannot be right if it was written by AI: on lawyers’ preferences of documents perceived as authored by an LLM vs a human". Artificial Intelligence and Law; Schneiders et al.. (2024). "Objection Overruled! Lay People can Distinguish Large Language Models from Lawyers, but still Favour Advice from an LLM". arXiv preprint arXiv:2409.07871; Bo et al.. (2025). "To rely or not to rely? evaluating interventions for appropriate reliance on large language models". Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems
+[^12]: Harasta & Novotná (2024). It cannot be right if it was written by AI: on lawyers’ preferences of documents perceived as authored by an LLM vs a human. *Artificial Intelligence and Law*; Schneiders et al (2024). Objection Overruled! Lay People can Distinguish Large Language Models from Lawyers, but still Favour Advice from an LLM. *arXiv preprint arXiv:2409.07871*; Bo et al (2025). To rely or not to rely? evaluating interventions for appropriate reliance on large language models. *Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems*
 
-[^13]: Cheong et al.. (2025). "How Can AI Augment Access to Justice? Public Defenders’ Perspectives on AI Adoption". under review at ACM CSLAW 2026
+[^13]: Cheong et al (2025). How Can AI Augment Access to Justice? Public Defenders’ Perspectives on AI Adoption. *under review at ACM CSLAW 2026*
 
-[^14]: Cheong et al.. (2025). "Agents aren’t Agents: The Agency, Loyalty, and Accountability Problems of AI Agents". under review at ICLR 2026
+[^14]: Cheong et al (2025). Agents aren’t Agents: The Agency, Loyalty, and Accountability Problems of AI Agents. *under review at ICLR 2026*
 
-[^15]: Jimin Mun et al.. (2024). "Particip-ai: A democratic surveying framework for anticipating future ai use cases, harms and benefits". Proceedings of the AAAI/ACM Conference on AI, Ethics, and Society
+[^15]: Jimin Mun et al (2024). Particip-ai: A democratic surveying framework for anticipating future ai use cases, harms and benefits. *Proceedings of the AAAI/ACM Conference on AI, Ethics, and Society*
 
-[^16]: Cheong et al.. (2024). "(A) I am not A lawyer, but...: engaging legal experts towards responsible LLM policies for legal advice". Proceedings of the 2024 ACM Conference on Fairness, Accountability, and Transparency
+[^16]: Cheong et al (2024). (A) I am not A lawyer, but...: engaging legal experts towards responsible LLM policies for legal advice. *Proceedings of the 2024 ACM Conference on Fairness, Accountability, and Transparency*
 
-[^17]: Cheong et al.. (2025). "How Can AI Augment Access to Justice? Public Defenders’ Perspectives on AI Adoption". under review at ACM CSLAW 2026
+[^17]: Cheong et al (2025). How Can AI Augment Access to Justice? Public Defenders’ Perspectives on AI Adoption. *under review at ACM CSLAW 2026*
 
-[^18]: Inyoung Cheong. (forthcoming). "Epistemic and Emotional Harms of Generative AI: Towards Human-Centered First Amendment". Michigan Technology Law Review
+[^18]: Inyoung Cheong (forthcoming). Epistemic and Emotional Harms of Generative AI: Towards Human-Centered First Amendment. *Michigan Technology Law Review*
 
-[^19]: Inyoung Cheong. (2020). "After Facebook’s 2016 Data Breach I: The California Consumer Privacy Act of 2018". The Journal of Law and Economic Regulation; Inyoung Cheong. (2020). "After Facebook’s 2016 Data Breach II: The U.S. Federal Courts’ Consumer Class Actions". The Journal of Law and Economic Regulation; Inyoung Cheong. (2021). "After Facebook’s 2016 Data Breach III: The FTC’s 5-Billion Dollar Settlement". The Journal of Law and Economic Regulation
+[^19]: Inyoung Cheong (2020). After Facebook’s 2016 Data Breach I: The California Consumer Privacy Act of 2018. *The Journal of Law and Economic Regulation*; Inyoung Cheong (2020). After Facebook’s 2016 Data Breach II: The U.S. Federal Courts’ Consumer Class Actions. *The Journal of Law and Economic Regulation*; Inyoung Cheong (2021). After Facebook’s 2016 Data Breach III: The FTC’s 5-Billion Dollar Settlement. *The Journal of Law and Economic Regulation*
 
-[^20]: Cheong et al.. (2025). "Penalizing Transparency? How AI Disclosure and Author Demographics Shape Human and AI Judgments About Writing". CHIWORK 2025 AI Disclosure Workshop; Zhehui Liao et al.. (2025). "LLMs as Research Tools: A Large Scale Survey of Researchers’ Usage and Perceptions". Proceedings of the Conference of the Language Models (COLM) 2025
+[^20]: Cheong et al (2025). Penalizing Transparency? How AI Disclosure and Author Demographics Shape Human and AI Judgments About Writing. *CHIWORK 2025 AI Disclosure Workshop*; Zhehui Liao et al (2025). LLMs as Research Tools: A Large Scale Survey of Researchers’ Usage and Perceptions. *Proceedings of the Conference of the Language Models (COLM) 2025*
 
-[^21]: Inyoung Cheong. (forthcoming). "Epistemic and Emotional Harms of Generative AI: Towards Human-Centered First Amendment". Michigan Technology Law Review
+[^21]: Inyoung Cheong (forthcoming). Epistemic and Emotional Harms of Generative AI: Towards Human-Centered First Amendment. *Michigan Technology Law Review*
 
-[^22]: Szymanski et al.. (2025). "Limitations of the llm-as-a-judge approach for evaluating llm outputs in expert knowledge tasks". Proceedings of the 30th International Conference on Intelligent User Interfaces
+[^22]: Szymanski et al (2025). Limitations of the llm-as-a-judge approach for evaluating llm outputs in expert knowledge tasks. *Proceedings of the 30th International Conference on Intelligent User Interfaces*
